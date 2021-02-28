@@ -29,13 +29,13 @@ Route::get('/projects', function () {
 });
 
 Route::get('post/create', function(){
-    DB::table('post')->insert([
+    DB::table('posts')->insert([
         'title' =>'Valerie',
         'body' =>'here you will see story'
     ]);
 });
 
 Route::get('post', function(){
-    $post = post::find(1);
+    $post = posts::find(1);
     return $client;
 });
