@@ -35,7 +35,4 @@ Route::get('post/create', function(){
     ]);
 });
 
-Route::get('post', function(){
-    $post = posts::find(1);
-    return $client;
-});
+Route::get('post', [BlogController:: class, 'index']);
