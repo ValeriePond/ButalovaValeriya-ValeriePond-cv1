@@ -35,4 +35,4 @@ Route::get('post/create', function(){
     ]);
 });
 
-Route::get('post', [BlogController:: class, 'index']);
+Route::get('post', 'App\Http\Controllers\BlogController@index');
