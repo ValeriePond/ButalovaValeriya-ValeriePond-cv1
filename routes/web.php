@@ -42,3 +42,5 @@ Route::get('blog/create', function(){
 });
 
 Route::post('blog/create', 'App\Http\Controllers\BlogController@store')->name('add-post');
+
+Route::get('blog/{id}', 'App\Http\Controllers\BlogController@get_post');
