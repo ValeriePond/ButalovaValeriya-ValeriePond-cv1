@@ -18,8 +18,8 @@ class ApiController extends Controller
     public function get_post(Request $request){
         $post = post::find($request->post_id);
 
-        if($client == null){
-            return response(['message' => 'There is no post'], 404)
+        if($post == null){
+            return response(['message' => 'There is no post'], 404);
         }
 
         return response($post, 200);
