@@ -6,10 +6,9 @@ $siteOwnersEmail = 'leralera630@gmail.com';
 
 if($_POST) {
 
-   $name = $_POST['contactName'];
-   $email = $_POST['contactEmail'];
-   $subject = $_POST['contactSubject'];
-   $contact_message = $_POST['contactMessage'];
+   $name = $_POST['Name'];
+   $email = $_POST['Email'];
+   $contact_message = $_POST['Message'];
 
    // Check Name
 	if (strlen($name) < 2) {
@@ -18,10 +17,6 @@ if($_POST) {
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
 		$error['email'] = "Please enter a valid email address.";
-	}
-	// Check Message
-	if (strlen($contact_message) < 15) {
-		$error['message'] = "Please enter your message. It should have at least 15 characters.";
 	}
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }

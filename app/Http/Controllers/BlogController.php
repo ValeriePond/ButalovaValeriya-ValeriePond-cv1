@@ -31,4 +31,5 @@ class BlogController extends Controller
 
         return view('blog.detail')->with(['post' => $post]);
     }
+
 }
