@@ -73,15 +73,15 @@
 
 			<div class="col-twelve">
 
-				<h5>Hello, World.</h5>
-				<h1>I'm Butalova Valeriya.</h1>
+				<h5>{{__('lang.welcome')}}</h5>
+				<h1>{{__('lang.welcome1')}}</h1>
 
 				<p class="intro-position">
-					<span>Student of SDU</span>
-					<span>Cheese maker</span> 
+					<span>{{__('lang.welc_span')}}</span>
+					<span>{{__('lang.welc_span2')}}</span> 
 				</p>
 
-				<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+				<a class="button stroke smoothscroll" href="#about" title="">{{__('lang.welcome2')}}</a>
 
 			</div>  
 			

@@ -53,3 +53,8 @@ Route::get('/contacts', function(){
 Route::post('/contacts', 'App\Http\Controllers\ContactsController@contact')->name('contact-form');
 
 Route::post('/', 'App\Http\Controllers\ContactsController@contact')->name('contact-form');
+
+Route::get('/{lang}', function($lang){
+    App::setlocale($lang);
+    return view('welcome');
+});
